@@ -45,21 +45,23 @@ class SubjectConditionedLayer(nn.Module):
                     lora_A_i = self.lora_A[i](x[mask])
                     lora_B_i = self.lora_B[i](lora_A_i)
                     lora_out[mask] = self.alpha / self.rank * lora_B_i
-        
+
             out = out + lora_out
 
         else:
-            raise Warning("Subject ID is not set. Subject-conditioned layer will not be applied.")
+            raise Warning(
+                "Subject ID is not set. Subject-conditioned layer will not be applied."
+            )
 
         return out
 
 
 class SubjectModelWrapper(nn.Module):
-    def __init__(self, base_model, num_subjects):
+    def __init__(self, base_model, num_subjects, rank=4, alpha=1.0):
         super().__init__()
         self.base_model = base_model
         self.replace_linear_with_subjectlinear(
-            model=self.base_model, num_subjects=num_subjects
+            model=self.base_model, num_subjects=num_subjects, rank=rank, alpha=alpha
         )
 
     def forward(self, x, subject_id):
@@ -102,5 +104,3 @@ class SubjectModelWrapper(nn.Module):
                 SubjectModelWrapper.replace_linear_with_subjectlinear(
                     module, num_subjects
                 )
-
-
