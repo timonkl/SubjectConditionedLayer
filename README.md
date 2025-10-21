@@ -1,6 +1,6 @@
 # Subject Conditioned Layer
 
-This repository contains the code for reproducing or extending the **Subject Conditioned Layer** from our spotlight sresentation at the [NeurIPS 2025 Workshop on Foundation Models for the Brain and Body](https://brainbodyfm-workshop.github.io/#home).
+This repository contains the code for reproducing or extending the **Subject Conditioned Layer** from our spotlight presentation at the [NeurIPS 2025 Workshop on Foundation Models for the Brain and Body](https://brainbodyfm-workshop.github.io/#home).
 
 **Mitigating Subject Dependency in EEG Decoding with Subject-Specific Low-Rank Adapters**
 <br>
