@@ -1,14 +1,15 @@
-# SubjectConditionedLayer
+# Subject Conditioned Layer
 
-This repository contains the code for reproducing or extending the **Subject Conditioned Layer** from our **NeurIPS 2025 Workshop on Foundation Models for the Brain and Body** paper:
+This repository contains the code for reproducing or extending the **Subject Conditioned Layer** from our spotlight sresentation at the [NeurIPS 2025 Workshop on Foundation Models for the Brain and Body](https://brainbodyfm-workshop.github.io/#home).
 
 **Mitigating Subject Dependency in EEG Decoding with Subject-Specific Low-Rank Adapters**
 <br>
 Timon Klein, Piotr Minakowski & Sebastian Sager
 <br>
-[Read the full paper]()
+[OpenReview](https://openreview.net/forum?id=vDtsuVfBmG)
 <br>
-[NeurIPS Workshop webpage](https://neurips.cc/virtual/2025/122104)
+[arXiv](https://arxiv.org/abs/2510.08059)
+
 
 
 
@@ -85,7 +86,17 @@ The research code used to reproduce the experiments from the paper is available 
 ## 📄 Citation
 If you use this work, please cite our paper:
 
-TODO
+```bibtex
+ @misc{klein2025mitigatingsubjectdependencyeeg,
+      title={Mitigating Subject Dependency in EEG Decoding with Subject-Specific Low-Rank Adapters}, 
+      author={Timon Klein and Piotr Minakowski and Sebastian Sager},
+      year={2025},
+      eprint={2510.08059},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.08059}, 
+}
+```
 
 
 
